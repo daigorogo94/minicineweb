@@ -1,23 +1,51 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fdfdfd;
-  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffaf9;
+  color: #222;
   max-width: 800px;
   margin: auto;
+  padding: 20px;
+  line-height: 1.6;
 }
 
 h1 {
   text-align: center;
   color: darkred;
+  font-size: 2em;
 }
 
-section {
-  margin-bottom: 30px;
+h2 {
+  color: #444;
+  margin-top: 40px;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+form input, form select, form button {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+form button {
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+form button:hover {
+  background-color: #a30000;
 }
 
 footer {
   text-align: center;
-  margin-top: 40px;
   font-size: 0.9em;
   color: gray;
+  margin-top: 40px;
 }
