@@ -1,51 +1,96 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fffaf9;
-  color: #222;
-  max-width: 800px;
-  margin: auto;
+  background: linear-gradient(to bottom, #1b1b1b, #2e2e2e);
+  color: #f1f1f1;
+  margin: 0;
   padding: 20px;
-  line-height: 1.6;
+}
+
+a {
+  color: #00ffd0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 h1 {
+  font-size: 2.5em;
+  color: #ff5050;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
   text-align: center;
-  color: darkred;
-  font-size: 2em;
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h2 {
-  color: #444;
-  margin-top: 40px;
+.card img {
+  width: 150px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-ul, ol {
-  padding-left: 20px;
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
 }
 
-form input, form select, form button {
-  padding: 8px;
-  width: 100%;
-  max-width: 300px;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input, form select {
+  padding: 10px;
+  width: 250px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #aaa;
-}
-
-form button {
-  background-color: darkred;
-  color: white;
-  cursor: pointer;
   border: none;
 }
 
-form button:hover {
-  background-color: #a30000;
+form button {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-footer {
-  text-align: center;
+form button:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.formnote {
   font-size: 0.9em;
-  color: gray;
-  margin-top: 40px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+ul, ol {
+  padding-left: 30px;
 }
