@@ -4,20 +4,36 @@
   <meta charset="UTF-8">
   <title>Junior Cine Video</title>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Animate.css para efectos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-  <h1>🎬 Bienvenidos a Junior Cine Video</h1>
 
-  <section>
-    <h2>🎞️ Películas Disponibles</h2>
-    <ul>
-      <li>Invasión Galáctica</li>
-      <li>Historias de un pueblo</li>
-      <li>La Risa Perdida</li>
-    </ul>
+  <header class="animate__animated animate__fadeInDown">
+    <h1>🎬 Junior Cine Video</h1>
+    <p>📍 Sajama – <a href="https://wa.me/59172464830" target="_blank">Contáctanos por WhatsApp</a></p>
+  </header>
+
+  <section class="animate__animated animate__fadeInLeft">
+    <h2>🎞️ Cartelera</h2>
+    <div class="galeria">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/81AIqOZ3uKL._AC_SY679_.jpg" alt="Invasión Galáctica">
+        <p>Invasión Galáctica</p>
+      </div>
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/91KkWf50SoL._AC_SY679_.jpg" alt="La Risa Perdida">
+        <p>La Risa Perdida</p>
+      </div>
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SY679_.jpg" alt="Historias de un pueblo">
+        <p>Historias de un pueblo</p>
+      </div>
+    </div>
   </section>
 
-  <section>
+  <section class="animate__animated animate__fadeInRight">
     <h2>🔥 Ranking Semanal</h2>
     <ol>
       <li>La Risa Perdida</li>
@@ -26,38 +42,28 @@
     </ol>
   </section>
 
-  <section>
+  <section class="animate__animated animate__fadeInLeft">
     <h2>🎁 Promociones</h2>
     <ul>
       <li>🎟️ 2x1 en funciones nocturnas (viernes a domingo)</li>
-      <li>🥤 Combo Popcorn + Gaseosa a solo Bs. 10</li>
+      <li>🍿 Combo Popcorn + Gaseosa a solo Bs. 10</li>
     </ul>
   </section>
 
-  <section>
+  <section class="animate__animated animate__fadeInUp">
     <h2>🗳 Vota por tu película favorita</h2>
-    <form action="https://formspree.io/f/YOUR_CODE_AQUI" method="POST">
-      <label for="name">Tu nombre:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-
-      <label for="movie">Película favorita:</label><br>
-      <select id="movie" name="movie" required>
+    <form action="https://formspree.io/f/YOUR_CODE" method="POST">
+      <input type="text" name="name" placeholder="Tu nombre" required>
+      <select name="movie" required>
+        <option value="">Elige una película</option>
         <option value="Invasión Galáctica">Invasión Galáctica</option>
-        <option value="Historias de un pueblo">Historias de un pueblo</option>
         <option value="La Risa Perdida">La Risa Perdida</option>
-      </select><br><br>
-
+        <option value="Historias de un pueblo">Historias de un pueblo</option>
+      </select>
       <button type="submit">Enviar voto</button>
+      <p class="formnote">*Tus votos ayudan a construir el ranking semanal</p>
     </form>
-    <p style="font-size: 0.9em;">*Tus votos ayudarán a actualizar el ranking semanal 📊</p>
   </section>
 
-  <footer>
-    <p>📍 Sajama - Contacto: 
-      <a href="https://wa.me/59172464830" target="_blank">WhatsApp</a>
-    </p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
