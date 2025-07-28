@@ -2,83 +2,148 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Junior Cine Video</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Librería de animaciones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #121212;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #1f1f1f;
+    }
+
+    header h1 {
+      color: #e53935;
+      font-size: 2.5rem;
+    }
+
+    .contacto {
+      color: #00e676;
+      text-decoration: none;
+    }
+
+    .cartelera {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .cartelera h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #81d4fa;
+    }
+
+    .peliculas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .pelicula {
+      background: #1e1e1e;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pelicula:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.7);
+    }
+
+    .pelicula img {
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .pelicula .info {
+      padding: 10px;
+    }
+
+    .pelicula h3 {
+      font-size: 1rem;
+      margin: 10px 0 5px;
+    }
+
+    .pelicula p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px;
+      background: #1f1f1f;
+      font-size: 1rem;
+    }
+  </style>
 </head>
 <body>
 
-  <header class="animate__animated animate__fadeInDown">
+  <header>
     <h1>🎬 Junior Cine Video</h1>
-    <p>📍 Sajama – <a href="https://wa.me/59172464830" target="_blank">Contáctanos por WhatsApp</a></p>
+    <p>📍 Sajama — <a class="contacto" href="https://wa.me/59172464830" target="_blank">Contáctanos por WhatsApp</a></p>
   </header>
 
-  <section class="animate__animated animate__fadeInLeft">
-    <h2>🎞️ Cartelera</h2>
-    <div class="galeria">
-
-      <div class="card">
+  <section class="cartelera">
+    <h2>🎥 Cartelera</h2>
+    <div class="peliculas">
+      <div class="pelicula">
         <img src="https://lumiere-a.akamaihd.net/v1/images/image_01f8d16d.jpeg?region=0%2C0%2C540%2C810" alt="Lilo & Stitch">
-        <p>Lilo & Stitch (Live Action)</p>
+        <div class="info">
+          <h3>Lilo & Stitch (Live Action)</h3>
+          <p>Una niña y su peculiar mascota alienígena en una aventura inolvidable sobre el valor de la familia.</p>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="pelicula">
         <img src="https://lumiere-a.akamaihd.net/v1/images/garland_teaser1_poster_las_168c6658.jpeg?region=0,0,770,1100" alt="Moana 2">
-        <p>Moana 2</p>
+        <div class="info">
+          <h3>Moana 2</h3>
+          <p>Moana regresa con nuevas travesías por el océano y desafíos épicos en tierras mágicas.</p>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="pelicula">
         <img src="https://preview.redd.it/new-poster-for-the-live-action-how-to-train-your-dragon-v0-bdx5z4g9o8re1.jpeg?width=1080&crop=smart&auto=webp&s=9a4d038728f4451de1a99a5a3adbd79af9442b6b" alt="Cómo entrenar a tu dragón">
-        <p>Cómo entrenar a tu dragón (Live Action)</p>
+        <div class="info">
+          <h3>Cómo entrenar a tu dragón (Live Action)</h3>
+          <p>Hipo y Chimuelo cobran vida en esta versión realista llena de acción y emoción.</p>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="pelicula">
         <img src="https://www.opinion.com.bo/asset/thumbnail,992,558,center,center/media/opinion/images/2025/04/03/2025040310020453889.jpg" alt="Minecraft">
-        <p>Minecraft (2025)</p>
+        <div class="info">
+          <h3>Minecraft (2025)</h3>
+          <p>Steve debe salvar su mundo cúbico en esta adaptación cinematográfica del videojuego.</p>
+        </div>
       </div>
 
-      <div class="card">
-        <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/6FTRaVeY1HCwekiVpgSIlEm1PKp.jpg" alt="M3GAN 2.0">
-        <p>M3GAN 2.0</p>
+      <div class="pelicula">
+        <img src="https://media.themoviedb.org/t/p/w440_and_h660_face/6FTRaVeY1HCwekiVpgSIlEm1PKp.jpg" alt="Megan 2.0">
+        <div class="info">
+          <h3>M3GAN 2.0</h3>
+          <p>La muñeca más letal regresa más inteligente, más peligrosa... y más terrorífica que nunca.</p>
+        </div>
       </div>
-
     </div>
   </section>
 
-  <section class="animate__animated animate__fadeInRight">
-    <h2>🔥 Ranking Semanal</h2>
-    <ol>
-      <li>Moana 2</li>
-      <li>M3GAN 2.0</li>
-      <li>Minecraft</li>
-    </ol>
-  </section>
-
-  <section class="animate__animated animate__fadeInLeft">
-    <h2>🎁 Promociones</h2>
-    <ul>
-      <li>🎟️ 2x1 en funciones nocturnas (viernes a domingo)</li>
-      <li>🍿 Combo Popcorn + Gaseosa a Bs. 10</li>
-    </ul>
-  </section>
-
-  <section class="animate__animated animate__fadeInUp">
-    <h2>🗳 Vota por tu película favorita</h2>
-    <form action="https://formspree.io/f/YOUR_CODE" method="POST">
-      <input type="text" name="name" placeholder="Tu nombre" required>
-      <select name="movie" required>
-        <option value="">Elige una película</option>
-        <option value="Lilo & Stitch">Lilo & Stitch</option>
-        <option value="Moana 2">Moana 2</option>
-        <option value="Cómo entrenar a tu dragón">Cómo entrenar a tu dragón</option>
-        <option value="Minecraft">Minecraft</option>
-        <option value="M3GAN 2.0">M3GAN 2.0</option>
-      </select>
-      <button type="submit">Enviar voto</button>
-      <p class="formnote">*Tus votos ayudan a construir el ranking semanal</p>
-    </form>
-  </section>
+  <div class="footer">
+    ¿Te perdiste alguna? Ven a verlas en nuestras salas privadas con proyectores HD, solo en Junior Cine Video 🎥
+  </div>
 
 </body>
 </html>
