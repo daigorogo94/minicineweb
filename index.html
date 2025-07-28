@@ -2,15 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mini Cine Sajama</title>
+  <title>Junior Cine Video</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>🎬 Bienvenidos a Mini Cine Sajama</h1>
+  <h1>🎬 Bienvenidos a Junior Cine Video</h1>
 
   <section>
-    <h2>Películas Disponibles</h2>
-    <ul id="cartelera">
+    <h2>🎞️ Películas Disponibles</h2>
+    <ul>
       <li>Invasión Galáctica</li>
       <li>Historias de un pueblo</li>
       <li>La Risa Perdida</li>
@@ -19,7 +19,7 @@
 
   <section>
     <h2>🔥 Ranking Semanal</h2>
-    <ol id="ranking">
+    <ol>
       <li>La Risa Perdida</li>
       <li>Invasión Galáctica</li>
       <li>Historias de un pueblo</li>
@@ -28,11 +28,34 @@
 
   <section>
     <h2>🎁 Promociones</h2>
-    <p>¡2x1 en funciones nocturnas los fines de semana!</p>
+    <ul>
+      <li>🎟️ 2x1 en funciones nocturnas (viernes a domingo)</li>
+      <li>🥤 Combo Popcorn + Gaseosa a solo Bs. 10</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🗳 Vota por tu película favorita</h2>
+    <form action="https://formspree.io/f/YOUR_CODE_AQUI" method="POST">
+      <label for="name">Tu nombre:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="movie">Película favorita:</label><br>
+      <select id="movie" name="movie" required>
+        <option value="Invasión Galáctica">Invasión Galáctica</option>
+        <option value="Historias de un pueblo">Historias de un pueblo</option>
+        <option value="La Risa Perdida">La Risa Perdida</option>
+      </select><br><br>
+
+      <button type="submit">Enviar voto</button>
+    </form>
+    <p style="font-size: 0.9em;">*Tus votos ayudarán a actualizar el ranking semanal 📊</p>
   </section>
 
   <footer>
-    <p>📍 Sajama - Contacto: <a href="https://wa.me/5917XXXXXXX" target="_blank">WhatsApp</a></p>
+    <p>📍 Sajama - Contacto: 
+      <a href="https://wa.me/59172464830" target="_blank">WhatsApp</a>
+    </p>
   </footer>
 
   <script src="script.js"></script>
